@@ -20,16 +20,17 @@ screenshotImage.onload = function() {
 				out.src = dataURL;
 				document.getElementById('glitch-container').appendChild(out);
 			});
-			var bg;
-var y = 0;
-var glitchId = 100;
+	var bg;
+	var y = 0;
+	var glitchId = 100;
 
-function setup() {
- bg = loadImage('*?screenshot.html?id=' + glitchId++);
- createCanvas(innerWidth, innerHeight, WEBGL);
-}
+		function setup() {
+ 			bg = loadImage('*?screenshot.html?id=' + glitchId++);
+ 			createCanvas(innerWidth, innerHeight, WEBGL);
+			}
 	}
 }
+
 function draw() {
   background(bg);
 
