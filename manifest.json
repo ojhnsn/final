@@ -1,27 +1,19 @@
 {
-  "name": "Getting Started Example",
+  "name": "Page Glitcher",
+  "description": "Take a screenshot of the current tab viewport and glitch it.",
   "version": "1.0",
-  "description": "Build an Extension!",
-  "options_page": "options.html",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "author": "zky829",
   "background": {
-  "scripts": ["background.js"],
-  "persistent": false
-},
-"browser_action": {
-  "default_popup": "popup.html",
-  "default_icon": {
-  "16": "images/get_started16.png",
-  "32": "images/get_started32.png",
-  "48": "images/get_started48.png",
-  "128": "images/get_started128.png"
-}
-},
-"icons": {
-  "16": "images/get_started16.png",
-  "32": "images/get_started32.png",
-  "48": "images/get_started48.png",
-  "128": "images/get_started128.png"
-},
-  "manifest_version": 2
+    "persistent": false,
+    "scripts": ["page-glitch.js"]
+  },
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_title": "Page Glitcher"
+  },
+  "permissions": [
+    "activeTab"
+  ], 
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
