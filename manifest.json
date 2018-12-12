@@ -1,8 +1,8 @@
 {
-  "name": "Page Glitcher",
-  "description": "Take a screenshot of the current tab viewport and glitch it.",
-  "version": "1.0",
-  "author": "zky829",
+  "name": "Glitchy Glitch Gloo",
+  "description": "Take a screenshot of the current tab viewport and glitch it. Iteration of 'Page Glitcher' by zky829",
+  "version": "2.0",
+  "author": "zky829, ojhnsn",
   "background": {
     "persistent": false,
     "scripts": ["page-glitch.js"]
@@ -13,7 +13,7 @@
   },
   "permissions": [
     "activeTab"
-  ], 
+  ],
   "manifest_version": 2,
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
